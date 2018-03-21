@@ -121,10 +121,13 @@ def problem2(line1, line2, thickness, win):
     # -------------------------------------------------------------------------
     line1.attach_to(win)
     line2.attach_to(win)
+    # 2
     korner1 = line1.get_midpoint()
     korner2 = line2.get_midpoint()
     rect1 = rg.Rectangle(korner1, korner2)
+    #3
     rect1.outline_thickness = thickness
+    #4
     rect1.outline_color = line1.color
     rect1.attach_to(win)
 
